@@ -1,10 +1,10 @@
-public class Part03
+public class Part03      //おまじない
 {
-    public static void main(String[] args)
+    public static void main(String[] args)   //おまじない
     {
-        String name = "アーサー";
-        String enemy = "魔王サタン";
-        int lv = 255 + 100;
+        String name = "アーサー";          //プレイヤーの名前
+        String enemy = "魔王サタン";       //敵の名前
+        int lv = 255 + 100;              //レベル」
         System.out.println(enemy + "が世界を滅ぼそうとしている");
         System.out.println(name + "はレベル" + lv + "のツワモノです");
         System.out.println("うわっ、" + name + "のレベル、高すぎ？");
