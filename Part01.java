@@ -7,8 +7,7 @@ public class Part01      //おまじない
         putJyosyou();
         
         if( lv < 40 ){
-            System.out.println( name + "は魔王に敗れましたorz");
-            System.out.println( "GAME OVER");
+            putGameOver();  
         }else{
             System.out.println(name + "は魔王を倒しました！");
             if( lv > 200 ){
@@ -30,5 +29,10 @@ public class Part01      //おまじない
         System.out.println("魔王が" + "が世界を滅ぼそうとしている");
         System.out.println(name + "はレベル" + lv + "のツワモノです");
     }
-
+    
+    static void putGameOver()
+    {
+        System.out.println( name + "は魔王に敗れましたorz");
+        System.out.println( "GAME OVER");
+    }
 }
