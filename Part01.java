@@ -4,15 +4,8 @@ public class Part01      //おまじない
     static int lv = 45;                        //レベル
     public static void main(String[] args)   //おまじない
     {
-<<<<<<< HEAD
-        
-
         putJyosyou();
-=======
-        String name = "すけさん";             //プレイヤーの名前
-        int lv = 45;                        //レベル
->>>>>>> 2a172e7d45702d568124db8594c396827c95d882
-
+        
         if( lv < 40 ){
             System.out.println( name + "は魔王に敗れましたorz");
             System.out.println( "GAME OVER");
@@ -37,8 +30,5 @@ public class Part01      //おまじない
         System.out.println("魔王が" + "が世界を滅ぼそうとしている");
         System.out.println(name + "はレベル" + lv + "のツワモノです");
     }
-<<<<<<< HEAD
-=======
 
->>>>>>> 2a172e7d45702d568124db8594c396827c95d882
 }
