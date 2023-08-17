@@ -1,9 +1,12 @@
 public class Part01      //おまじない
 {
+    static String name = "すけさん";             //プレイヤーの名前
+    static int lv = 45;                        //レベル
     public static void main(String[] args)   //おまじない
     {
-        String name = "すけさん";             //プレイヤーの名前
-        int lv = 45;                        //レベル
+        
+
+        putJyosyou();
 
         if( lv < 40 ){
             System.out.println( name + "は魔王に敗れましたorz");
