@@ -1,7 +1,7 @@
 public class Part01      //おまじない
 {
     static String name = "すけさん";             //プレイヤーの名前
-    static int lv = 45;                        //レベル
+    static int lv = 65;                        //レベル
     public static void main(String[] args)   //おまじない
     {
         putJyosyou();
@@ -26,7 +26,8 @@ public class Part01      //おまじない
 
     static void putGameClear()
     {
-        System.out.println(name + "は魔王を倒しました！");
+        String str = name + "は魔王を倒しました！";
+        System.out.println(str);
         if( lv > 200 ){
         System.out.println("レベル" + lv + "なので魔王ゴミでしたwwww");
         }else if( lv > 120 ){
