@@ -29,16 +29,18 @@ public class Part01      //おまじない
         String s0 = name + "は魔王を倒しました！";
         put(s0);
 
+        System.out.print("レベル" + lv);
+
         if( lv > 200 ){
-        put("レベル" + lv + "なので魔王ゴミでしたwwww");
+        put( "なので魔王ゴミでしたwwww");
         }else if( lv > 120 ){
-        put("レベル" + lv + "なので魔王弱すぎでしたwww");
+        put( "なので魔王弱すぎでしたwww");
         }else if( lv > 80 ){
-        put("レベル" + lv + "なので余裕でした");
+        put("なので余裕でした");
         }else if( lv > 50 ){
-        put("レベル" + lv + "なので倒せました");
+        put("でしたが倒せました");
         }else{
-        put("レベル" + lv + "なので苦戦しました");
+        put("でしたので苦戦しました");
         }
         put( "GAME CLEAR!");
     }
