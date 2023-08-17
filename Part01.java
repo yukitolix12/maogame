@@ -26,21 +26,21 @@ public class Part01      //おまじない
 
     static void putGameClear()
     {
-        String str = name + "は魔王を倒しました！";
-        put(str);
+        String s0 = name + "は魔王を倒しました！";
+        put(s0);
 
         if( lv > 200 ){
-        System.out.println("レベル" + lv + "なので魔王ゴミでしたwwww");
+        put("レベル" + lv + "なので魔王ゴミでしたwwww");
         }else if( lv > 120 ){
-        System.out.println("レベル" + lv + "なので魔王弱すぎでしたwww");
+        put("レベル" + lv + "なので魔王弱すぎでしたwww");
         }else if( lv > 80 ){
-        System.out.println("レベル" + lv + "なので余裕でした");
+        put("レベル" + lv + "なので余裕でした");
         }else if( lv > 50 ){
-        System.out.println("レベル" + lv + "なので倒せました");
+        put("レベル" + lv + "なので倒せました");
         }else{
-        System.out.println("レベル" + lv + "なので苦戦しました");
+        put("レベル" + lv + "なので苦戦しました");
         }
-        System.out.println( "GAME CLEAR!");
+        put( "GAME CLEAR!");
     }
 
     static void put(String str)
