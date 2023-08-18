@@ -11,7 +11,7 @@ public class Part01
         }else{
             lv = 110;
         }
-        lv = 90;
+        
         putJyosyou();                //序章を表示                    
         
         if( lv < 40 ){      //レベルが40未満の場合
