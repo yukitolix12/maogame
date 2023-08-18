@@ -1,13 +1,13 @@
-public class Part01      //おまじない
+public class Part01      
 {
     static String name = "すけさん";             //プレイヤーの名前
-    static int lv = 65;                        //レベル
-    public static void main(String[] args)   //おまじない
+    static int lv = 65;                        //プレイヤーのレベル
+    public static void main(String[] args)   
     {
-        putJyosyou();
+        putJyosyou();                //序章を表示                    
         
-        if( lv < 40 ){
-            putGameOver();  
+        if( lv < 40 ){  //レベルが40未満の場合
+            putGameOver();  //ゲームオーバー画面を表示
         }else{
             putGameClear();
         }
