@@ -4,16 +4,17 @@ public class Part01
     static int lv;                         //プレイヤーのレベル
     public static void main(String[] args) throws java.io.IOException 
     {
+        putJyosyou();                //序章を表示
+        System.out.println("1.すぐに魔王を倒しにいく");   
+        
         int  c =  System.in.read();
 
-        if( c == 0 ){
+        if( c == 49 ){
             lv = 30;
         }else{
             lv = 110;
         }
-        System.out.println( "cの値は" + c + "です。");
-
-        putJyosyou();                //序章を表示                    
+        System.out.println( "cの値は" + c + "です。");                 
         
         if( lv < 40 ){      //レベルが40未満の場合
             putGameOver();  //ゲームオーバー画面を表示
