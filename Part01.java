@@ -12,6 +12,8 @@ public class Part01
             putGameClear(); //ゲームクリアの画面を表示
         }
     }
+
+    // 序章を表示します
     static void putJyosyou()
     {
         System.out.println("魔王が" + "が世界を滅ぼそうとしている");
@@ -45,6 +47,7 @@ public class Part01
         put( "GAME CLEAR!");
     }
 
+    //引数で指定された文字列を表示します
     static void put(String str)
     {
         System.out.println(str);
