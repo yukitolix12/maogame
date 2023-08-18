@@ -5,7 +5,8 @@ public class Part01
     public static void main(String[] args) throws java.io.IOException 
     {
         putJyosyou();                //序章を表示
-        System.out.println("1.すぐに魔王を倒しにいく");   
+        System.out.println("1.すぐに魔王を倒しにいく");
+        System.out.println("2.修行してから魔王を倒しにいく");      
         
         int  c =  System.in.read();
 
