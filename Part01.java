@@ -6,10 +6,10 @@ public class Part01
     {
         putJyosyou();                //序章を表示                    
         
-        if( lv < 40 ){  //レベルが40未満の場合
+        if( lv < 40 ){      //レベルが40未満の場合
             putGameOver();  //ゲームオーバー画面を表示
-        }else{
-            putGameClear();
+        }else{              //レベルが40以上の場合
+            putGameClear(); //ゲームクリアの画面を表示
         }
     }
     static void putJyosyou()
