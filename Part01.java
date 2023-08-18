@@ -15,7 +15,7 @@ public class Part01
     /** 
      * 序章を表示します 
     */
-    static void putJyosyou()
+    public static void putJyosyou()
     {
         System.out.println("魔王が" + "が世界を滅ぼそうとしている");
         System.out.println(name + "はレベル" + lv + "のツワモノです");
@@ -24,7 +24,7 @@ public class Part01
     /**
      *  ゲームオーバー画面を表示します
      */
-    static void putGameOver()
+    public static void putGameOver()
     {
         System.out.println( name + "は魔王に敗れましたorz");
         System.out.println( "GAME OVER");
@@ -34,7 +34,7 @@ public class Part01
      *  ゲームクリア画面を表示します
      */
 
-    static void putGameClear()
+    public static void putGameClear()
     {
         String s0 = name + "は魔王を倒しました！";
         put(s0);
@@ -60,7 +60,7 @@ public class Part01
      * 
      * @param str
      */
-    static void put(String str)
+    public static void put(String str)
     {
         System.out.println(str);
     }
