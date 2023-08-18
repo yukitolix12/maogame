@@ -4,6 +4,13 @@ public class Part01
     static int lv;                         //プレイヤーのレベル
     public static void main(String[] args)   
     {
+        int  c = 1;
+
+        if( c == 0 ){
+            lv = 30;
+        }else{
+            lv = 110;
+        }
         lv = 90;
         putJyosyou();                //序章を表示                    
         
