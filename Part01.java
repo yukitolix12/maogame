@@ -1,9 +1,10 @@
 public class Part01      
 {
-    static String name = "すけさん";             //プレイヤーの名前
-    static int lv = 65;                        //プレイヤーのレベル
+    static String name = "すけさん";         //プレイヤーの名前
+    static int lv;                         //プレイヤーのレベル
     public static void main(String[] args)   
     {
+        lv = 90;
         putJyosyou();                //序章を表示                    
         
         if( lv < 40 ){      //レベルが40未満の場合
