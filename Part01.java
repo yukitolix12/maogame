@@ -2,16 +2,17 @@ public class Part01
 {
     static String name = "すけさん";         //プレイヤーの名前
     static int lv;                         //プレイヤーのレベル
-    public static void main(String[] args)   
+    public static void main(String[] args) throws java.io.IOException 
     {
-        int  c = 1;
+        int  c =  System.in.read();
 
         if( c == 0 ){
             lv = 30;
         }else{
             lv = 110;
         }
-        
+        System.out.println( "cの値は" + c + "です。");
+
         putJyosyou();                //序章を表示                    
         
         if( lv < 40 ){      //レベルが40未満の場合
