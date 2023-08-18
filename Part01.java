@@ -10,7 +10,7 @@ public class Part01
         
         int  c =  System.in.read();
 
-        if( c == 49 ){
+        if( c == '1' ){
             lv = 30;
         }else{
             lv = 110;
