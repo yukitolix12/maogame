@@ -1,7 +1,7 @@
 public class Part01      
 {
     static String name = "すけさん";         //プレイヤーの名前
-    static int lv;                         //プレイヤーのレベル
+    static int lv = 30;                         //プレイヤーのレベル
     public static void main(String[] args) throws java.io.IOException 
     {
         putJyosyou();                //序章を表示
@@ -10,12 +10,9 @@ public class Part01
         
         int  c =  System.in.read();
 
-        if( c == '1' ){
-            lv = 30;
-        }else{
+        if( c == '2' ){
             lv = 110;
-        }
-        System.out.println( "cの値は" + c + "です。");                 
+        }                 
         
         if( lv < 40 ){      //レベルが40未満の場合
             putGameOver();  //ゲームオーバー画面を表示
