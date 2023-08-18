@@ -12,19 +12,27 @@ public class Part01
             putGameClear(); //ゲームクリアの画面を表示
         }
     }
-
-    // 序章を表示します
+    /** 
+     * 序章を表示します 
+    */
     static void putJyosyou()
     {
         System.out.println("魔王が" + "が世界を滅ぼそうとしている");
         System.out.println(name + "はレベル" + lv + "のツワモノです");
     }
     
+    /**
+     *  ゲームオーバー画面を表示します
+     */
     static void putGameOver()
     {
         System.out.println( name + "は魔王に敗れましたorz");
         System.out.println( "GAME OVER");
     }
+    
+    /**
+     *  ゲームクリア画面を表示します
+     */
 
     static void putGameClear()
     {
@@ -47,7 +55,11 @@ public class Part01
         put( "GAME CLEAR!");
     }
 
-    //引数で指定された文字列を表示します
+    /**
+     * 引数で指定された文字列を表示します
+     * 
+     * @param str
+     */
     static void put(String str)
     {
         System.out.println(str);
