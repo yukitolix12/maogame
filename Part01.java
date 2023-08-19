@@ -32,10 +32,7 @@ public class Part01
     public static int inputCommand() throws java.io.IOException 
     {
         int  c =  System.in.read();
-        if( c == 10){
-            return( inputCommand() );
-        }
-        if( c == 13){
+        if( c == 10 || c == 13){
             return( inputCommand() );
         }
         return( c );
