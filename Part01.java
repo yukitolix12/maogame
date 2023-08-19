@@ -15,7 +15,7 @@ public class Part01
         }
     }
     
-    public static void putCommand()
+    public static void putCommand() throws java.io.IOException 
     {
         System.out.println("1.魔王を倒しにいく");
         System.out.println("2.修行する");      
