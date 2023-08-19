@@ -33,7 +33,7 @@ public class Part01
             System.out.println("レベルが" + lv + "になった");
             putCommand();
         }else{
-            putCommand();
+            inputCommand();
         }
     }       
     /** 
