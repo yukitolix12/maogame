@@ -5,15 +5,8 @@ public class Part01
     public static void main(String[] args) throws java.io.IOException 
     {
         putJyosyou();                //序章を表示
-        System.out.println("1.魔王を倒しにいく");
-        System.out.println("2.修行する");      
         
-        int  c =  System.in.read();
-
-        if( c == '2' ){
-            lv = lv + 5;
-            System.out.println("レベルが" + lv + "になった");
-        }                 
+        putCommand();                //コマンドを表示
         
         if( lv < 40 ){      //レベルが40未満の場合
             putGameOver();  //ゲームオーバー画面を表示
@@ -21,6 +14,19 @@ public class Part01
             putGameClear(); //ゲームクリアの画面を表示
         }
     }
+    
+    public static void putCommand()
+    {
+        System.out.println("1.魔王を倒しにいく");
+        System.out.println("2.修行する");      
+        
+        int  c =  System.in.read();
+
+        if( c == '2' ){
+            lv += 5;
+            System.out.println("レベルが" + lv + "になった");
+        }
+    }       
     /** 
      * 序章を表示します 
     */
