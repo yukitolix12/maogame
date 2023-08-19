@@ -18,8 +18,12 @@ public class Part01
     public static void putCommand() throws java.io.IOException 
     {
         System.out.println("1.魔王を倒しにいく");
-        System.out.println("2.修行する");      
-        
+        System.out.println("2.修行する");  
+        inputCommand();    
+    }
+
+    public static void inputCommand() throws java.io.IOException 
+    {
         int  c =  System.in.read();
 
         if( c == '1'){
@@ -29,7 +33,6 @@ public class Part01
             System.out.println("レベルが" + lv + "になった");
             putCommand();
         }else{
-            System.out.println( "正しくキーを入力してね c=" + c );
             putCommand();
         }
     }       
