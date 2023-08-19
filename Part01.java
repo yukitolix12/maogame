@@ -12,6 +12,7 @@ public class Part01
 
         if( c == '2' ){
             lv = 110;
+            System.out.println("レベルが" + lv + "になった");
         }                 
         
         if( lv < 40 ){      //レベルが40未満の場合
