@@ -19,22 +19,26 @@ public class Part01
     {
         System.out.println("1.魔王を倒しにいく");
         System.out.println("2.修行する");  
-        inputCommand();    
-    }
-
-    public static void inputCommand() throws java.io.IOException 
-    {
-        int  c =  System.in.read();
-
+        int     c = inputCommand();
         if( c == '1'){
             System.out.println( "魔王が現れた！");
         }else if( c == '2' ){
             lv += 5;
             System.out.println("レベルが" + lv + "になった");
-            putCommand();
-        }else{
-            inputCommand();
+            putCommand();  
         }
+    }
+
+    public static int inputCommand() throws java.io.IOException 
+    {
+        int  c =  System.in.read();
+        if( c == 10){
+            return( inputCommand() );
+        }
+        if( c == 13){
+            return( inputCommand() );
+        }
+        return( c );
     }       
     /** 
      * 序章を表示します 
