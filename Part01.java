@@ -22,9 +22,15 @@ public class Part01
         
         int  c =  System.in.read();
 
-        if( c == '2' ){
+        if( c == '1'){
+            System.out.println( "魔王が現れた！");
+        }else if( c == '2' ){
             lv += 5;
             System.out.println("レベルが" + lv + "になった");
+            putCommand();
+        }else{
+            System.out.println( "正しくキーを入力してね c=" + c );
+            putCommand();
         }
     }       
     /** 
