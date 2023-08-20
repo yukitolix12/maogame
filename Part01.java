@@ -40,7 +40,7 @@ public class Part01
                 putCommand();  
             }
             }else if( c == '3'){  //宿屋に泊まる
-                hp = 30;
+                hp = lv;
                 System.out.println("HPが" + hp + "になった");
                 putCommand();
             }
