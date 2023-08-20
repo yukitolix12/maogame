@@ -1,7 +1,8 @@
 public class Part01      
 {
     static String name = "すけさん";         //プレイヤーの名前
-    static int lv = 30;                         //プレイヤーのレベル
+    static int lv = 30;                    //プレイヤーのレベル
+    static int hp = 30;                    //ヒットポイントの定義
     public static void main(String[] args) throws java.io.IOException 
     {
         putJyosyou();                //序章を表示
