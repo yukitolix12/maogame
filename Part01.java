@@ -28,7 +28,11 @@ public class Part01
             hp -= 3;
             System.out.println("レベルが" + lv + "になった");
             System.out.println("HPが" + hp + "になった");
-            putCommand();  
+            if( hp == 0 ){
+                System.out.println("GAME OVER");
+            }else{
+                putCommand();  
+            }
         }
     }
 
