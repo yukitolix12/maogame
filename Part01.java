@@ -25,7 +25,9 @@ public class Part01
             System.out.println( "魔王が現れた！");
         }else if( c == '2' ){
             lv += 5;
+            hp -= 3;
             System.out.println("レベルが" + lv + "になった");
+            System.out.println("HPが" + hp + "になった");
             putCommand();  
         }
     }
