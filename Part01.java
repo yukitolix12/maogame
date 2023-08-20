@@ -8,7 +8,12 @@ public class Part01
         putJyosyou();                //序章を表示
         
         putCommand();                //コマンドを表示
+
+        if( hp == 0 ){
+            return;
+        }
         
+        //魔王を倒しにいく
         if( lv < 40 ){      //レベルが40未満の場合
             putGameOver();  //ゲームオーバー画面を表示
         }else{              //レベルが40以上の場合
