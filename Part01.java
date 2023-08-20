@@ -2,7 +2,7 @@ public class Part01
 {
     static String name = "すけさん";         //プレイヤーの名前
     static int lv = 30;                    //プレイヤーのレベル
-    static int hp = 30;                    //ヒットポイントの定義
+    static int hp = 30;                    //プレイヤーのHPを定義
     public static void main(String[] args) throws java.io.IOException 
     {
         putJyosyou();                //序章を表示
@@ -44,7 +44,7 @@ public class Part01
     public static void putJyosyou()
     {
         System.out.println("魔王が" + "が世界を滅ぼそうとしている");
-        System.out.println(name + "はレベル" + lv + "のツワモノです");
+        System.out.println(name + "はレベル" + lv + "HP" + hp + "のツワモノです");
     }
     
     /**
