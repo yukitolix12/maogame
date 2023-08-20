@@ -24,7 +24,8 @@ public class Part01
     public static void putCommand() throws java.io.IOException 
     {
         System.out.println("1.魔王を倒しにいく");
-        System.out.println("2.修行する");  
+        System.out.println("2.修行する"); 
+        System.out.println("3.宿屋に泊まる");   
         int     c = inputCommand();
         if( c == '1'){
             System.out.println( "魔王が現れた！");
@@ -38,8 +39,12 @@ public class Part01
             }else{
                 putCommand();  
             }
+            }else if( c == '3'){  //宿屋に泊まる
+                hp = 30;
+                System.out.println("HPが" + hp + "になった");
+                putCommand();
+            }
         }
-    }
 
     public static int inputCommand() throws java.io.IOException 
     {
