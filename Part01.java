@@ -45,7 +45,8 @@ public class Part01
             }
             }else if( c == '3'){  //宿屋に泊まる
                 hp = lv;
-                System.out.println("HPが" + hp + "になった");
+                gold -= 10;
+                putStatus();
                 putCommand();
             }
         }
