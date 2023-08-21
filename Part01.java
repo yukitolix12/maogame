@@ -69,8 +69,8 @@ public class Part01
 
     public static void putStatus()
     {
-        System.out.println( "Lv" + lv + "HP" + hp + ""+ gold +"G");
-        
+        System.out.println("-------------------");
+        System.out.println( "Lv" + lv + " HP"  + hp + "" + gold  +" G");
     }
     
     /**
