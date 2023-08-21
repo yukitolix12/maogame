@@ -64,7 +64,6 @@ public class Part01
     public static void putJyosyou()
     {
         System.out.println("魔王が" + "が世界を滅ぼそうとしている");
-        System.out.println(name + "はレベル" + lv + "HP" + hp + "のツワモノです");
     }
     
     /**
@@ -74,6 +73,12 @@ public class Part01
     {
         System.out.println( name + "は魔王に敗れましたorz");
         System.out.println( "GAME OVER");
+    }
+
+    public static void putStatus()
+    {
+        System.out.println(name + "はレベル" + lv + "HP" + hp + "所持金"+ gold +"のツワモノです");
+        putStatus()
     }
     
     /**
