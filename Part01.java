@@ -44,6 +44,9 @@ public class Part01
                 putCommand();  
             }
             }else if( c == '3'){  //宿屋に泊まる
+                if( gold < 10 ){
+                    return;
+                }
                 hp = lv;
                 gold -= 10;
                 putStatus();
