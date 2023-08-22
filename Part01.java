@@ -3,7 +3,7 @@ public class Part01
     static String name = "すけさん";         //プレイヤーの名前
     static int lv = 30;                    //プレイヤーのレベル
     static int hp = 30;                    //プレイヤーのHPを定義
-    static long gold = 5000000000L;                  //プレイヤーの所持金
+    static double gold = 12.34;                  //プレイヤーの所持金
     public static void main(String[] args) throws java.io.IOException 
     {
         putJyosyou();                //序章を表示
