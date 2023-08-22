@@ -31,8 +31,9 @@ public class Part01
         if( c == '1'){
             System.out.println( "魔王が現れた！");
         }else if( c == '2' ){
+            int     d = 6;
             lv += 5;
-            hp -= 3;
+            hp -= d;
             if( hp < 0 ){
                 hp = 0;
             }
