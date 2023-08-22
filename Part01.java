@@ -28,10 +28,11 @@ public class Part01
         System.out.println("2.修行する"); 
         System.out.println("3.宿屋に泊まる");   
         int     c = inputCommand();
-        if( c == '1'){
+        if( c == '1'){    //1.魔王を倒しにいく
             System.out.println( "魔王が現れた！");
-        }else if( c == '2' ){
-            int     d = 6;
+        }else if( c == '2' ){  //2.修行する
+            java.util.Random r = new java.util.Random();
+            int     d = r.nextInt( 8 );
             lv += 5;
             hp -= d;
             if( hp < 0 ){
