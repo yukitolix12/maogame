@@ -32,12 +32,13 @@ public class Part01
             System.out.println( "魔王が現れた！");
         }else if( c == '2' ){  //2.修行する
             java.util.Random r = new java.util.Random();
-            int     d = r.nextInt( 8 );
+            int              d = r.nextInt( 8 );
             lv += 5;
             hp -= d;
             if( hp < 0 ){
                 hp = 0;
             }
+            System.out.println( name + "は" + d + "ポイントのダメージを受けた！");
             System.out.println("レベルが" + lv + "になった");
             putStatus();
             if( hp == 0 ){
