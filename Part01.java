@@ -3,7 +3,7 @@ public class Part01
     static String name = "すけさん";         //プレイヤーの名前
     static int lv = 30;                    //プレイヤーのレベル
     static int hp = 30;                    //プレイヤーのHPを定義
-    static double gold = 12.34;                  //プレイヤーの所持金
+    static double gold = 50.0;                  //プレイヤーの所持金
     public static void main(String[] args) throws java.io.IOException 
     {
         putJyosyou();                //序章を表示
@@ -44,9 +44,9 @@ public class Part01
                 putCommand();  
             }
             }else if( c == '3'){  //宿屋に泊まる
-                if( gold >= 10 ){
+                if( gold >= 9.95 ){
                     hp = lv;
-                    gold -= 10;  
+                    gold -= 9.95;  
                 }
                 putStatus();
                 putCommand();
