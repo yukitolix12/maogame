@@ -50,14 +50,20 @@ public class Part01
         //敵出現
         int              e = r.nextInt( 3 ) + 1; //敵の数
         put( "敵が" + e + "匹、現れた");
-        if( e == 1){
-            put( "● ");
-        }
-        if( e == 2){
-            put( "● ● ");
-        }
-        if( e == 3){
-            put( "● ● ●");
+
+        switch( e ){
+            case 1:{
+                put( "● ");
+                break;
+            }
+            case 2:{
+                put( "● ● ");
+                break;
+            }
+            case 3:{
+                put( "● ● ●");
+                break;
+            }
         }
         
 
