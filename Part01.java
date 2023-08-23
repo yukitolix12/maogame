@@ -28,19 +28,26 @@ public class Part01
         put("2.修行する"); 
         put("3.宿屋に泊まる");   
         int     c = inputCommand();
-        if( c == '1'){    //1.魔王を倒しにいく
-            put( "魔王が現れた！");
-        }else if( c == '2' ){  //2.修行する
-            syugyou();
-        }else if( c == '3'){  //宿屋に泊まる
+        switch( c ){    //1.魔王を倒しにいく
+            case '1':{
+                put( "魔王が現れた！");
+                break;
+            }
+            case '2':{  //2.修行する
+                syugyou();
+                break;
+            }
+            case '3':{  //宿屋に泊まる
                 if( gold >= 9.95 ){
                     hp = lv;
-                    gold -= 9.95;  
+                    gold -= 9.95;
                 }
                 putStatus();
                 putCommand();
+                break;
             }
         }
+    }
     /**
      * 修行する
      */
