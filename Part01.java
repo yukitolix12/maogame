@@ -31,7 +31,22 @@ public class Part01
         if( c == '1'){    //1.魔王を倒しにいく
             put( "魔王が現れた！");
         }else if( c == '2' ){  //2.修行する
-            java.util.Random r = new java.util.Random();
+            syugyou();
+        }else if( c == '3'){  //宿屋に泊まる
+                if( gold >= 9.95 ){
+                    hp = lv;
+                    gold -= 9.95;  
+                }
+                putStatus();
+                putCommand();
+            }
+        }
+    /**
+     * 修行する
+     */
+    public static void syugyou()
+    {
+        java.util.Random r = new java.util.Random();
             int              d = r.nextInt( 8 );
             lv += 5;
             hp -= d;
@@ -46,15 +61,7 @@ public class Part01
             }else{
                 putCommand();  
             }
-            }else if( c == '3'){  //宿屋に泊まる
-                if( gold >= 9.95 ){
-                    hp = lv;
-                    gold -= 9.95;  
-                }
-                putStatus();
-                putCommand();
-            }
-        }
+    }
 
     public static int inputCommand() throws java.io.IOException 
     {
@@ -98,7 +105,7 @@ public class Part01
         String s0 = name + "は魔王を倒しました！";
         put(s0);
 
-        System.out.print("レベル" + lv);
+        put("レベル" + lv);
 
         if( lv > 200 ){
         put( "なので魔王ゴミでしたwwww");
@@ -121,6 +128,6 @@ public class Part01
      */
     public static void put(String str)
     {
-        System.out.println(str);
+        put(str);
     }
 }
