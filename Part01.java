@@ -59,10 +59,10 @@ public class Part01
         put( "敵が" + e + "匹、現れた");
 
         switch( e ){
-            case 1:{  put( "● "); break; }
-            case 2:{  put( "● ● "); break; }
-            case 3:{  put( "● ● ●"); break; }
-            case 4:{  put( "● ● ● ●"); break; }
+            case 1:{  put( "(・Д・) "); break; }
+            case 2:{  put( "(・Д・) (・Д・) "); break; }
+            case 3:{  put( "(・Д・) (・Д・) (・Д・)"); break; }
+            case 4:{  put( "(・Д・) (・Д・) (・Д・) (・Д・)"); break; }
         }
         
 
