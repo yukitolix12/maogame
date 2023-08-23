@@ -27,7 +27,7 @@ public class Part01
         put("1.魔王を倒しにいく");
         put("2.修行する"); 
         put("3.宿屋に泊まる");  
-         
+
         switch( inputCommand() ){    //1.魔王を倒しにいく
             case '1':{
                 put( "魔王が現れた！");
@@ -55,22 +55,14 @@ public class Part01
     {
         java.util.Random r = new java.util.Random();
         //敵出現
-        int              e = r.nextInt( 3 ) + 1; //敵の数
+        int              e = r.nextInt( 4 ) + 1; //敵の数
         put( "敵が" + e + "匹、現れた");
 
         switch( e ){
-            case 1:{
-                put( "● ");
-                break;
-            }
-            case 2:{
-                put( "● ● ");
-                break;
-            }
-            case 3:{
-                put( "● ● ●");
-                break;
-            }
+            case 1:{  put( "● "); break; }
+            case 2:{  put( "● ● "); break; }
+            case 3:{  put( "● ● ●"); break; }
+            case 4:{  put( "● ● ● ●"); break; }
         }
         
 
