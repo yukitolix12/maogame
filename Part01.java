@@ -26,9 +26,9 @@ public class Part01
     {
         put("1.魔王を倒しにいく");
         put("2.修行する"); 
-        put("3.宿屋に泊まる");   
-        int     c = inputCommand();
-        switch( c ){    //1.魔王を倒しにいく
+        put("3.宿屋に泊まる");  
+         
+        switch( inputCommand() ){    //1.魔王を倒しにいく
             case '1':{
                 put( "魔王が現れた！");
                 break;
