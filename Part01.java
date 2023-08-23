@@ -24,12 +24,12 @@ public class Part01
     
     public static void putCommand() throws java.io.IOException 
     {
-        System.out.println("1.魔王を倒しにいく");
-        System.out.println("2.修行する"); 
-        System.out.println("3.宿屋に泊まる");   
+        put("1.魔王を倒しにいく");
+        put("2.修行する"); 
+        put("3.宿屋に泊まる");   
         int     c = inputCommand();
         if( c == '1'){    //1.魔王を倒しにいく
-            System.out.println( "魔王が現れた！");
+            put( "魔王が現れた！");
         }else if( c == '2' ){  //2.修行する
             java.util.Random r = new java.util.Random();
             int              d = r.nextInt( 8 );
@@ -38,11 +38,11 @@ public class Part01
             if( hp < 0 ){
                 hp = 0;
             }
-            System.out.println( name + "は" + d + "ポイントのダメージを受けた！");
-            System.out.println("レベルが" + lv + "になった");
+            put( name + "は" + d + "ポイントのダメージを受けた！");
+            put("レベルが" + lv + "になった");
             putStatus();
             if( hp == 0 ){
-                System.out.println("GAME OVER");
+                put("GAME OVER");
             }else{
                 putCommand();  
             }
@@ -69,15 +69,15 @@ public class Part01
     */
     public static void putJyosyou()
     {
-        System.out.println("魔王" + "が世界を滅ぼそうとしている");
+        put("魔王" + "が世界を滅ぼそうとしている");
         putStatus();
     }
 
     public static void putStatus()
     {
-        System.out.println("----------------------------");
-        System.out.println( " " + name + " Lv" + lv + " HP"  + hp + " " + gold  +"G");
-        System.out.println("----------------------------");
+        put("----------------------------");
+        put( " " + name + " Lv" + lv + " HP"  + hp + " " + gold  +"G");
+        put("----------------------------");
     }
     
     /**
@@ -85,8 +85,8 @@ public class Part01
      */
     public static void putGameOver()
     {
-        System.out.println( name + "は魔王に敗れましたorz");
-        System.out.println( "GAME OVER");
+        put( name + "は魔王に敗れましたorz");
+        put( "GAME OVER");
     }
     
     /**
