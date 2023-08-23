@@ -46,8 +46,12 @@ public class Part01
      */
     public static void syugyou() throws java.io.IOException 
     {
-        //HPを減らす
         java.util.Random r = new java.util.Random();
+        //敵出現
+        int              e = r.nextInt( 3 ) + 1; //敵の数
+        put( "敵が" + e + "匹、現れた");
+
+        //HPを減らす
         int              d = r.nextInt( 8 );
         hp -= d;
         if( hp < 0 ){
@@ -56,7 +60,7 @@ public class Part01
         put( name + "は" + d + "ポイントのダメージを受けた！");
 
         // レベル上昇
-        int              e = r.nextInt( 5 ) + 1;
+  
         lv += e;
         put("レベルが" + lv + "になった");
         putStatus();
