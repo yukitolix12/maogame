@@ -50,7 +50,16 @@ public class Part01
         //敵出現
         int              e = r.nextInt( 3 ) + 1; //敵の数
         put( "敵が" + e + "匹、現れた");
-        put( "● ● ●");
+        if( e == 1){
+            put( "● ");
+        }
+        if( e == 2){
+            put( "● ● ");
+        }
+        if( e == 3){
+            put( "● ● ●");
+        }
+        
 
         //HPを減らす
         int              d = r.nextInt( 8 );
