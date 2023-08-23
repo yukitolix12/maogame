@@ -44,7 +44,7 @@ public class Part01
     /**
      * 修行する
      */
-    public static void syugyou()
+    public static void syugyou() throws java.io.IOException 
     {
         java.util.Random r = new java.util.Random();
             int              d = r.nextInt( 8 );
@@ -128,6 +128,6 @@ public class Part01
      */
     public static void put(String str)
     {
-        put(str);
+        System.out.println(str);
     }
 }
