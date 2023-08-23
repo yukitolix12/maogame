@@ -58,11 +58,12 @@ public class Part01
         int              e = r.nextInt( 4 ) + 1; //敵の数
         put( "敵が" + e + "匹、現れた");
 
+        String s =  "(・Д・) ";
         switch( e ){
-            case 1:{  put( "(・Д・) "); break; }
-            case 2:{  put( "(・Д・) (・Д・) "); break; }
-            case 3:{  put( "(・Д・) (・Д・) (・Д・)"); break; }
-            case 4:{  put( "(・Д・) (・Д・) (・Д・) (・Д・)"); break; }
+            case 1:{  put( s ); break; }
+            case 2:{  put( s + s ); break; }
+            case 3:{  put( s + s + s); break; }
+            case 4:{  put( s + s + s + s ); break; }
         }
         
 
