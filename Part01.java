@@ -46,21 +46,25 @@ public class Part01
      */
     public static void syugyou() throws java.io.IOException 
     {
+        //HPを減らす
         java.util.Random r = new java.util.Random();
-            int              d = r.nextInt( 8 );
-            lv += 5;
-            hp -= d;
-            if( hp < 0 ){
-                hp = 0;
-            }
-            put( name + "は" + d + "ポイントのダメージを受けた！");
-            put("レベルが" + lv + "になった");
-            putStatus();
-            if( hp == 0 ){
-                put("GAME OVER");
-            }else{
-                putCommand();  
-            }
+        int              d = r.nextInt( 8 );
+        hp -= d;
+        if( hp < 0 ){
+            hp = 0;
+        }
+        put( name + "は" + d + "ポイントのダメージを受けた！");
+
+        // レベル上昇
+        int              e = r.nextInt( 5 ) + 1;
+        lv += e;
+        put("レベルが" + lv + "になった");
+        putStatus();
+        if( hp == 0 ){
+            put("GAME OVER");
+        }else{
+            putCommand();  
+        }
     }
 
     public static int inputCommand() throws java.io.IOException 
