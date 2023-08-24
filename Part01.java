@@ -80,7 +80,7 @@ public class Part01
         put("レベルが" + lv + "になった");
         putStatus();
         if( hp == 0 ){
-            put("GAME OVER");
+            Console.put("GAME OVER");
         }else{
             putCommand();  
         }
