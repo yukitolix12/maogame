@@ -12,7 +12,7 @@ public class Console
     public static void putStatus()
     {
         put("----------------------------");
-        put( " " + name + " Lv" + lv + " HP"  + hp + " " + gold  +"G");
+        put( " " +  Part01.name + " Lv" +  Part01.lv + " HP"  +  Part01.hp + " " +  Part01.gold  +"G");
         put("----------------------------");
     }
     
@@ -21,7 +21,7 @@ public class Console
      */
     public static void putGameOver()
     {
-        put( name + "は魔王に敗れましたorz");
+        put(  Part01.name + "は魔王に敗れましたorz");
         put( "GAME OVER");
     }
     
@@ -31,18 +31,18 @@ public class Console
 
     public static void putGameClear()
     {
-        String s0 = name + "は魔王を倒しました！";
+        String s0 =  Part01.name + "は魔王を倒しました！";
         put(s0);
 
-        put("レベル" + lv);
+        put("レベル" +  Part01.lv);
 
-        if( lv > 200 ){
+        if(  Part01.lv > 200 ){
         put( "なので魔王ゴミでしたwwww");
-        }else if( lv > 120 ){
+        }else if( Part01.lv > 120 ){
         put( "なので魔王弱すぎでしたwww");
-        }else if( lv > 80 ){
+        }else if( Part01.lv > 80 ){
         put("なので余裕でした");
-        }else if( lv > 50 ){
+        }else if( Part01.lv > 50 ){
         put("でしたが倒せました");
         }else{
         put("でしたので苦戦しました");
