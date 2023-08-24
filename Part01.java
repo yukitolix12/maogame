@@ -55,9 +55,14 @@ public class Part01
     {
         java.util.Random r = new java.util.Random();
         //敵出現
-        int              e = r.nextInt( 6 ) + 1; //敵の数
+        int              e = r.nextInt( 3 ) + 1; //敵の数
         put( "敵が" + e + "匹、現れた");
 
+        String m =  "(・Д・) ";
+        String s =  "";
+
+
+/* 
         String s =  "(・Д・) ";
         switch( e ){
             case 1:{  put( s ); break; }
@@ -67,6 +72,7 @@ public class Part01
             case 5:{  put( s + s + s + s + s); break; }
             case 6:{  put( s + s + s + s + s + s); break; }
         }
+*/
         
 
         //HPを減らす
