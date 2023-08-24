@@ -55,13 +55,20 @@ public class Part01
     {
         java.util.Random r = new java.util.Random();
         //敵出現
-        int              e = r.nextInt( 3 ) + 1; //敵の数
+        int              e = r.nextInt( 10 ) + 1; //敵の数
         put( "敵が" + e + "匹、現れた");
 
         String m =  "(・Д・) ";
         String s =  "";
 
         int    i = 0;
+        if( i < e ){   s = s + m; i = i + 1;  }
+        if( i < e ){   s = s + m; i = i + 1;  }
+        if( i < e ){   s = s + m; i = i + 1;  }
+        if( i < e ){   s = s + m; i = i + 1;  }
+        if( i < e ){   s = s + m; i = i + 1;  }
+        if( i < e ){   s = s + m; i = i + 1;  }
+        if( i < e ){   s = s + m; i = i + 1;  }
         if( i < e ){   s = s + m; i = i + 1;  }
         if( i < e ){   s = s + m; i = i + 1;  }
         if( i < e ){   s = s + m; i = i + 1;  }
