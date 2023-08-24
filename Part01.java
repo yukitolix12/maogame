@@ -61,6 +61,11 @@ public class Part01
         String m =  "(・Д・) ";
         String s =  "";
 
+        for( int i = 0; i < e; i = i + 1){
+             s = s + m;
+        }
+
+/* 
         int    i = 0;
         if( i < e ){   s = s + m; i = i + 1;  }
         if( i < e ){   s = s + m; i = i + 1;  }
@@ -72,8 +77,9 @@ public class Part01
         if( i < e ){   s = s + m; i = i + 1;  }
         if( i < e ){   s = s + m; i = i + 1;  }
         if( i < e ){   s = s + m; i = i + 1;  }
-
+*/
         put( s );
+
 
 /* 
         String s =  "(・Д・) ";
