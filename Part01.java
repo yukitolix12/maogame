@@ -6,7 +6,7 @@ public class Part01
     static double gold = 50.0;                  //プレイヤーの所持金
     public static void main(String[] args) throws java.io.IOException 
     {
-        putJyosyou();                //序章を表示
+        Console.putJyosyou();                //序章を表示
         
         putCommand();                //コマンドを表示
 
@@ -16,21 +16,21 @@ public class Part01
         
         //魔王を倒しにいく
         if( lv < 40 ){      //レベルが40未満の場合
-            putGameOver();  //ゲームオーバー画面を表示
+            Console.putGameOver();  //ゲームオーバー画面を表示
         }else{              //レベルが40以上の場合
-            putGameClear(); //ゲームクリアの画面を表示
+            Console.putGameClear(); //ゲームクリアの画面を表示
         }
     }
     
     public static void putCommand() throws java.io.IOException 
     {
-        put("1.魔王を倒しにいく");
-        put("2.修行する"); 
-        put("3.宿屋に泊まる");  
+        Console.put("1.魔王を倒しにいく");
+        Console.put("2.修行する"); 
+        Console.put("3.宿屋に泊まる");  
 
         switch( inputCommand() ){    //1.魔王を倒しにいく
             case '1':{
-                put( "魔王が現れた！");
+                Console.put( "魔王が現れた！");
                 break;
             }
             case '2':{  //2.修行する
@@ -42,7 +42,7 @@ public class Part01
                     hp = lv;
                     gold -= 9.95;
                 }
-                putStatus();
+                Console.putStatus();
                 putCommand();
                 break;
             }
@@ -56,7 +56,7 @@ public class Part01
         java.util.Random r = new java.util.Random();
         //敵出現
         int              e = r.nextInt( 10 ) + 1; //敵の数
-        put( "敵が" + e + "匹、現れた");
+        Console.put( "敵が" + e + "匹、現れた");
 
         String m =  "(・Д・) ";
         String s =  "";
@@ -64,7 +64,7 @@ public class Part01
         for( int i = 0; i < e; i = i + 1){
              s = s + m;
         }
-        put( s );
+        Console.put( s );
 
         //HPを減らす
         int              d = r.nextInt( 8 );
@@ -72,13 +72,13 @@ public class Part01
         if( hp < 0 ){
             hp = 0;
         }
-        put( name + "は" + d + "ポイントのダメージを受けた！");
+        Console.put( name + "は" + d + "ポイントのダメージを受けた！");
 
         // レベル上昇
   
         lv += e;
-        put("レベルが" + lv + "になった");
-        putStatus();
+        Console.put("レベルが" + lv + "になった");
+        Console.putStatus();
         if( hp == 0 ){
             Console.put("GAME OVER");
         }else{
