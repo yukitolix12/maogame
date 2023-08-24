@@ -1,4 +1,6 @@
-/** 
+public class Console
+{
+    /** 
      * 序章を表示します 
     */
     public static void putJyosyou()
