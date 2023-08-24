@@ -55,7 +55,7 @@ public class Part01
     {
         java.util.Random r = new java.util.Random();
         //敵出現
-        int              e = r.nextInt( 5 ) + 1; //敵の数
+        int              e = r.nextInt( 6 ) + 1; //敵の数
         put( "敵が" + e + "匹、現れた");
 
         String s =  "(・Д・) ";
@@ -65,6 +65,7 @@ public class Part01
             case 3:{  put( s + s + s); break; }
             case 4:{  put( s + s + s + s ); break; }
             case 5:{  put( s + s + s + s + s); break; }
+            case 6:{  put( s + s + s + s + s + s); break; }
         }
         
 
