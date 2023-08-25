@@ -6,5 +6,6 @@ public class Part18
         javax.swing.JFrame jf = new javax.swing.JFrame();
         jf.setBounds( 20, 80, 300, 200);
         jf.setVisible( true );
+        jf.setDefaultCloseOperation( javax.swing.JFrame.EXIT_ON_CLOSE );
     }
 }
