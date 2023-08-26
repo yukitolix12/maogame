@@ -1,5 +1,6 @@
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPanel;
 import java.awt.Color;
 import java.awt.Font;
 
@@ -21,5 +22,9 @@ public class Part18
         jl.setFont( f );
         jl.setForeground( new Color( 255, 128, 0 ) );
         jf.add( jl );
+
+        JPanel  jp = new JPanel();
+        jp.setBackground( Color.BLACK );
+        jf.add( jp );
     }
 }
