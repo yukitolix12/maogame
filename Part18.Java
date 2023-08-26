@@ -15,7 +15,10 @@ public class Part18
         jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
         JLabel jl = new JLabel( "Hello ");
-        jl.setFont( new Font( Font.SERIF, Font.ITALIC, 150 ));
+        Font    f = new Font( Font.SERIF, 
+                              Font.BOLD | Font.ITALIC, 
+                              140 );
+        jl.setFont( f );
         jl.setForeground( new Color( 255, 128, 0 ) );
         jf.add( jl );
     }
