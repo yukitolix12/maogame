@@ -15,16 +15,16 @@ public class Part18
         jf.setVisible( true );
         jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
+        JPanel  jp = new JPanel();
+        jp.setBackground( Color.BLACK );
+        jf.add( jp );
+
         JLabel jl = new JLabel( "Hello ");
         Font    f = new Font( Font.SERIF, 
                               Font.BOLD | Font.ITALIC, 
                               140 );
         jl.setFont( f );
         jl.setForeground( new Color( 255, 128, 0 ) );
-        jf.add( jl );
-
-        JPanel  jp = new JPanel();
-        jp.setBackground( Color.BLACK );
-        jf.add( jp );
+        jp.add( jl );
     }
 }
