@@ -1,15 +1,17 @@
+import javax.swing.*;
+
 public class Part18
 {
     public static void main( String[] args)
     {
         System.out.println( "Hello" ); 
 
-        javax.swing.JFrame jf = new javax.swing.JFrame();
+        JFrame jf = new JFrame();
         jf.setBounds( 50, 100, 750, 400);
         jf.setVisible( true );
-        jf.setDefaultCloseOperation( javax.swing.JFrame.EXIT_ON_CLOSE );
+        jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
-        javax.swing.JLabel jl = new javax.swing.JLabel( "Hello ");
+        JLabel jl = new JLabel( "Hello ");
         jl.setFont( new java.awt.Font( java.awt.Font.SERIF, java.awt.Font.ITALIC, 150 ));
         jl.setForeground( new java.awt.Color( 255, 128, 0 ) );
         jf.add( jl );
