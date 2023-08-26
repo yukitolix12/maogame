@@ -10,7 +10,7 @@ public class Part18
         jf.setDefaultCloseOperation( javax.swing.JFrame.EXIT_ON_CLOSE );
 
         javax.swing.JLabel jl = new javax.swing.JLabel( "Hello ");
-        jl.setFont( new java.awt.Font( java.awt.Font.SERIF, java.awt.Font.BOLD, 150 ));
+        jl.setFont( new java.awt.Font( java.awt.Font.SERIF, java.awt.Font.ITALIC, 150 ));
         jl.setForeground( new java.awt.Color( 255, 128, 0 ) );
         jf.add( jl );
     }
