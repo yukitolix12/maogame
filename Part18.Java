@@ -11,7 +11,7 @@ public class Part18
 
         javax.swing.JLabel jl = new javax.swing.JLabel( "Hello ");
         jl.setFont( new java.awt.Font( null, 0, 100 ));
-        jl.setForeground( java.awt.Color.BLUE );
+        jl.setForeground( new java.awt.Color(255, 128, 0) );
         jf.add( jl );
     }
 }
