@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class Part18
 {
@@ -12,8 +13,8 @@ public class Part18
         jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
         JLabel jl = new JLabel( "Hello ");
-        jl.setFont( new java.awt.Font( java.awt.Font.SERIF, java.awt.Font.ITALIC, 150 ));
-        jl.setForeground( new java.awt.Color( 255, 128, 0 ) );
+        jl.setFont( new Font( Font.SERIF, Font.ITALIC, 150 ));
+        jl.setForeground( new Color( 255, 128, 0 ) );
         jf.add( jl );
     }
 }
