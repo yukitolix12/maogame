@@ -27,13 +27,13 @@ public class Part18
                               Font.BOLD | Font.ITALIC, 
                               140 );
 
+        jl.setFont( f );
+        jl.setForeground( new Color( 255, 128, 0 ) );
+        jp.add( jl );
+
         // パネルを作成し、親パネルに貼り付け
         JPanel  jpChild = new JPanel();
         jpChild.setBackground( Color.RED );
         jp.add( jpChild );
-        
-        jl.setFont( f );
-        jl.setForeground( new Color( 255, 128, 0 ) );
-        jp.add( jl );
     }
 }
