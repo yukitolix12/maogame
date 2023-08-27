@@ -12,7 +12,7 @@ public class Part18
 
         // ウィンドウフレームを作成、表示
         JFrame jf = new JFrame();
-        jf.setBounds( 50, 100, 750, 400);
+        jf.setBounds( 20, 50, 800, 450);
         jf.setVisible( true );
         jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
@@ -43,8 +43,8 @@ public class Part18
         jpChild.add( jlChild );
 
         //画像つきラベルを作成し、親パネル貼り付け
-        JLabel jlimage = new JLabel( new javax.swing.ImageIcon( "81899335.png") );
-        jlImage.setBounds( 0, 0, 384, 384);
+        JLabel jlImage = new JLabel( new javax.swing.ImageIcon( "81899335.png") );
+        jlImage.setSize( 384, 384);
         jp.add( jlImage );
     }
 }
