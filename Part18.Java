@@ -43,7 +43,7 @@ public class Part18
         jpChild.add( jlChild );
 
         //画像つきラベルを作成し、親パネル貼り付け
-        JLabel jlImage = new JLabel( new javax.swing.ImageIcon( "81899335.png") );
+        JLabel jlImage = new JLabel( new javax.swing.ImageIcon( "vx_chara08_a.png") );
         jlImage.setSize( 384, 384);
         jp.add( jlImage );
     }
