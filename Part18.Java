@@ -22,10 +22,10 @@ public class Part18
         jf.add( jp );
 
         // ラベルを作成し、親パネルに貼り付け
-        JLabel jl = new JLabel( "Hello ");
-        Font    f = new Font( Font.SERIF, 
-                              Font.BOLD | Font.ITALIC, 
-                              140 );
+        JLabel jl = new JLabel( "魔王が世界を滅ぼそうとしています");
+        Font    f = new Font( Font.MONOSPACED, 
+                              Font.BOLD,
+                              40 );
 
         jl.setFont( f );
         jl.setForeground( new Color( 255, 128, 0 ) );
