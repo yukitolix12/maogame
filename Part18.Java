@@ -41,5 +41,8 @@ public class Part18
         jlChild.setFont( f );
         jlChild.setForeground( Color.WHITE );
         jpChild.add( jlChild );
+
+        //画像つきラベルを作成し、親パネル貼り付け
+        JLabel jlimage = new JLabel( new javax.swing.ImageIcon( "81899335.png") );
     }
 }
