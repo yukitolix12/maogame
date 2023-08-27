@@ -29,7 +29,7 @@ public class Part18
 
         // パネルを作成し、親パネルに貼り付け
         JPanel  jpChild = new JPanel();
-        jpChild.setBackground( Color.BLACK );
+        jpChild.setBackground( Color.RED );
         jp.add( jpChild );
         
         jl.setFont( f );
