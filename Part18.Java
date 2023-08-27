@@ -16,12 +16,12 @@ public class Part18
         jf.setVisible( true );
         jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
-        // パネルを作成し、フレームに貼り付け
+        // 親パネルを作成し、フレームに貼り付け
         JPanel  jp = new JPanel();
         jp.setBackground( Color.BLACK );
         jf.add( jp );
 
-        // ラベルを作成し、パネルに貼り付け
+        // ラベルを作成し、親パネルに貼り付け
         JLabel jl = new JLabel( "Hello ");
         Font    f = new Font( Font.SERIF, 
                               Font.BOLD | Font.ITALIC, 
@@ -35,5 +35,11 @@ public class Part18
         JPanel  jpChild = new JPanel();
         jpChild.setBackground( Color.RED );
         jp.add( jpChild );
+
+        // ラベルを作成し、子パネルに貼り付け
+        JLabel jlChild = new JLabel( "こんにちは ");
+        jlChild.setFont( f );
+        jlChild.setForeground( Color.WHITE );
+        jpChild.add( jlChild )
     }
 }
