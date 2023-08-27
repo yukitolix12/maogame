@@ -37,7 +37,7 @@ public class Part18
         jp.add( jpChild );
 
         // ラベルを作成し、子パネルに貼り付け
-        JLabel jlChild = new JLabel( "こんにちは ");
+        JLabel jlChild = new JLabel( "トンヌラ Lv99 HP999/999");
         jlChild.setFont( f );
         jlChild.setForeground( Color.WHITE );
         jpChild.add( jlChild );
