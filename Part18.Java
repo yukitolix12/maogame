@@ -26,6 +26,12 @@ public class Part18
         Font    f = new Font( Font.SERIF, 
                               Font.BOLD | Font.ITALIC, 
                               140 );
+
+        // パネルを作成し、親パネルに貼り付け
+        JPanel  jpChild = new JPanel();
+        jpChild.setBackground( Color.BLACK );
+        jp.add( jpChild );
+        
         jl.setFont( f );
         jl.setForeground( new Color( 255, 128, 0 ) );
         jp.add( jl );
