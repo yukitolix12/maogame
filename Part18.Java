@@ -40,6 +40,6 @@ public class Part18
         JLabel jlChild = new JLabel( "こんにちは ");
         jlChild.setFont( f );
         jlChild.setForeground( Color.WHITE );
-        jpChild.add( jlChild )
+        jpChild.add( jlChild );
     }
 }
