@@ -44,5 +44,7 @@ public class Part18
 
         //画像つきラベルを作成し、親パネル貼り付け
         JLabel jlimage = new JLabel( new javax.swing.ImageIcon( "81899335.png") );
+        jlImage.setBounds( 0, 0, 384, 384);
+        jp.add( jlImage );
     }
 }
