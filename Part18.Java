@@ -6,7 +6,7 @@ import java.awt.Font;
 
 public class Part18
 {
-    public static void main( String[] args)
+    public static void main( String[] args) throws java.io.IOException 
     {
         System.out.println( "Hello" ); 
 
@@ -49,8 +49,8 @@ public class Part18
 */
 
         
-        java.io.File    f = new java.io.File( "vx_chara08_a.png" );
-        java.awt.image.BufferedImage    bi = javax.imageio.ImageIO.read( f );
+        java.io.File    file = new java.io.File( "vx_chara08_a.png" );
+        java.awt.image.BufferedImage    bi = javax.imageio.ImageIO.read( file );
         javax.swing.ImageIcon   ii = new javax.swing.ImageIcon( bi );
         JLabel jlImage = new JLabel( ii ) ;
         jlImage.setSize( 384, 384);
