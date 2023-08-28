@@ -42,8 +42,14 @@ public class Part18
         jlChild.setForeground( Color.WHITE );
         jpChild.add( jlChild );
 
+/* 
         //画像つきラベルを作成し、親パネル貼り付け
-        javax.swing.ImageIcon  ii = new javax.swing.ImageIcon( "vx_chara08_a.png" );
+        java.awt.image.BufferedImage ii 
+        = new java.awt.image.BufferedImage( "vx_chara08_a.png" );
+*/
+
+
+
         JLabel jlImage = new JLabel( ii ) ;
         jlImage.setSize( 384, 384);
         jp.add( jlImage );
