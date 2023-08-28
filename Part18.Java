@@ -48,7 +48,8 @@ public class Part18
         = new java.awt.image.BufferedImage( "vx_chara08_a.png" );
 */
 
-
+        
+        java.io.File    f = new java.io.File( "vx_chara08_a.png" );
 
         JLabel jlImage = new JLabel( ii ) ;
         jlImage.setSize( 384, 384);
