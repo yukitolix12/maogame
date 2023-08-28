@@ -51,7 +51,7 @@ public class Part18
         
         java.io.File    f = new java.io.File( "vx_chara08_a.png" );
         java.awt.image.BufferedImage    bi = javax.imageio.ImageIO.read( f );
-
+        javax.swing.ImageIcon   ii = new javax.swing.ImageIcon( bi );
         JLabel jlImage = new JLabel( ii ) ;
         jlImage.setSize( 384, 384);
         jp.add( jlImage );
