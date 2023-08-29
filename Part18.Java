@@ -56,9 +56,9 @@ public class Part18
         int     cx = 32;
         int     cy = 48;
 
-        putMonster( 3, 4, cx, cy );
-        putMonster( 6, 4, cx, cy );
-        putMonster( 9, 4, cx, cy );
+        putMonster( 3, 4, cx, cy );     // モンスター 3-4 表示
+        putMonster( 6, 4, cx, cy );     // モンスター 6-4 表示
+        putMonster( 9, 4, cx, cy );     // モンスター 9-4 表示
     }
 
     static void putMonster( int x, int y, int cx, int cy )
