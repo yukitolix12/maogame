@@ -55,27 +55,29 @@ public class Part18
         File file = new File( "vx_chara08_a.png" ); // ファイルを開く
         BufferedImage   ba = ImageIO.read( file );  //画像全体を読み込む
 
+        int     cx = 32;
+        int     cy = 48;
         {    
-            BufferedImage   bs = ba.getSubimage( 32 * 3, 48 * 4, 32, 48 );
+            BufferedImage   bs = ba.getSubimage( cx * 3, cy * 4, cx, cy );
             ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
             JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
-            jlImage.setSize( 32, 48 );                //画像部品サイズを設定
+            jlImage.setSize( cx, cy );                //画像部品サイズを設定
             jp.add( jlImage );                          //画像を貼り付け
         }
 
         {
-            BufferedImage   bs = ba.getSubimage( 32 * 6, 48 * 4, 32, 48 );
+            BufferedImage   bs = ba.getSubimage( cx * 6, cy * 4, cx, cy );
             ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
             JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
-            jlImage.setSize( 32, 48 );                //画像部品サイズを設定
+            jlImage.setSize( cx, cy );                //画像部品サイズを設定
             jp.add( jlImage );                          //画像を貼り付け
         }
 
         {
-            BufferedImage   bs = ba.getSubimage( 32 * 9, 48 * 4, 32, 48 );
+            BufferedImage   bs = ba.getSubimage( cx * 9, cy * 4, cx, cy );
             ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
             JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
-            jlImage.setSize( 32, 48 );                //画像部品サイズを設定
+            jlImage.setSize( cx, cy );                //画像部品サイズを設定
             jp.add( jlImage );                          //画像を貼り付け
         }
     }
