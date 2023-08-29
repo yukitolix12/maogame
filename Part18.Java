@@ -50,12 +50,6 @@ public class Part18
         jlChild.setForeground( Color.WHITE );
         jpChild.add( jlChild );
 
-/* 
-        //画像つきラベルを作成し、親パネル貼り付け
-        java.awt.image.BufferedImage ii 
-        = new java.awt.image.BufferedImage( "vx_chara08_a.png" );
-*/
-
         File file = new File( "vx_chara08_a.png" ); // ファイルを開く
         ba = ImageIO.read( file );  //画像全体を読み込む
 
@@ -65,31 +59,6 @@ public class Part18
         putMonster( 3, 4, cx, cy );
         putMonster( 6, 4, cx, cy );
         putMonster( 9, 4, cx, cy );
-/* 
-        {    
-            BufferedImage   bs = ba.getSubimage( cx * 3, cy * 4, cx, cy );
-            ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
-            JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
-            jlImage.setSize( cx, cy );                //画像部品サイズを設定
-            jp.add( jlImage );                          //画像を貼り付け
-        }
-
-        {
-            BufferedImage   bs = ba.getSubimage( cx * 6, cy * 4, cx, cy );
-            ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
-            JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
-            jlImage.setSize( cx, cy );                //画像部品サイズを設定
-            jp.add( jlImage );                          //画像を貼り付け
-        }
-
-        {
-            BufferedImage   bs = ba.getSubimage( cx * 9, cy * 4, cx, cy );
-            ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
-            JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
-            jlImage.setSize( cx, cy );                //画像部品サイズを設定
-            jp.add( jlImage );                          //画像を貼り付け
-        }
-*/
     }
 
     static void putMonster( int x, int y, int cx, int cy )
