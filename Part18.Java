@@ -57,6 +57,7 @@ public class Part18
 
         int     cx = 32;
         int     cy = 48;
+/* 
         {    
             BufferedImage   bs = ba.getSubimage( cx * 3, cy * 4, cx, cy );
             ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
@@ -80,5 +81,6 @@ public class Part18
             jlImage.setSize( cx, cy );                //画像部品サイズを設定
             jp.add( jlImage );                          //画像を貼り付け
         }
+*/
     }
 }
