@@ -10,8 +10,12 @@ import javax.swing.ImageIcon;
 
 public class Part18
 {
+    static BufferedImage   ba;
+    static JPanel          jp;
+    
     public static void main( String[] args) throws java.io.IOException 
     {
+
         System.out.println( "Hello" ); 
 
         // ウィンドウフレームを作成、表示
@@ -21,7 +25,7 @@ public class Part18
         jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
         // 親パネルを作成し、フレームに貼り付け
-        JPanel  jp = new JPanel();
+        jp = new JPanel();
         jp.setBackground( Color.BLACK );
         jf.add( jp );
 
@@ -53,10 +57,14 @@ public class Part18
 */
 
         File file = new File( "vx_chara08_a.png" ); // ファイルを開く
-        BufferedImage   ba = ImageIO.read( file );  //画像全体を読み込む
+        ba = ImageIO.read( file );  //画像全体を読み込む
 
         int     cx = 32;
         int     cy = 48;
+
+        putMonster( 3, 4, cx, cy );
+        putMonster( 6, 4, cx, cy );
+        putMonster( 9, 4, cx, cy );
 /* 
         {    
             BufferedImage   bs = ba.getSubimage( cx * 3, cy * 4, cx, cy );
@@ -83,4 +91,13 @@ public class Part18
         }
 */
     }
+
+    static void putMonster( int x, int y, int cx, int cy )
+    {    
+        BufferedImage   bs = ba.getSubimage( cx * x, cy * y, cx, cy );
+        ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
+        JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
+        jlImage.setSize( cx, cy );                //画像部品サイズを設定
+        jp.add( jlImage );                          //画像を貼り付け
+    }    
 }
