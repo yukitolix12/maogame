@@ -56,7 +56,7 @@ public class Part18
         BufferedImage   ba = ImageIO.read( file );  //画像全体を読み込む
 
         {    
-            BufferedImage   bs = ba.getSubimage( 96, 192, 32, 48 );
+            BufferedImage   bs = ba.getSubimage( 32 * 3, 48 * 4, 32, 48 );
             ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
             JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
             jlImage.setSize( 32, 48 );                //画像部品サイズを設定
@@ -64,7 +64,7 @@ public class Part18
         }
 
         {
-            BufferedImage   bs = ba.getSubimage( 192, 192, 32, 48 );
+            BufferedImage   bs = ba.getSubimage( 32 * 6, 48 * 4, 32, 48 );
             ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
             JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
             jlImage.setSize( 32, 48 );                //画像部品サイズを設定
@@ -72,7 +72,7 @@ public class Part18
         }
 
         {
-            BufferedImage   bs = ba.getSubimage( 32 * 10, 48 * 4, 32, 48 );
+            BufferedImage   bs = ba.getSubimage( 32 * 9, 48 * 4, 32, 48 );
             ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
             JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
             jlImage.setSize( 32, 48 );                //画像部品サイズを設定
