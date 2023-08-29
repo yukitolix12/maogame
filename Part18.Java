@@ -54,11 +54,11 @@ public class Part18
 
         
            
-        File file = new File( "vx_chara08_a.png" );
-        BufferedImage   bi = ImageIO.read( file );
-        ImageIcon   ii = new ImageIcon( bi );
-        JLabel jlImage = new JLabel( ii ) ;
-        jlImage.setSize( 384, 384 );
-        jp.add( jlImage );
+        File file = new File( "vx_chara08_a.png" ); // ファイルを開く
+        BufferedImage   bi = ImageIO.read( file );  //画像を読み込む
+        ImageIcon   ii = new ImageIcon( bi );       //JLabel用に型変換
+        JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
+        jlImage.setSize( 384, 384 );                //画像部品サイズを設定
+        jp.add( jlImage );                          //画像を貼り付け
     }
 }
