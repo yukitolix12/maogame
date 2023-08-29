@@ -55,8 +55,9 @@ public class Part18
         
            
         File file = new File( "vx_chara08_a.png" ); // ファイルを開く
-        BufferedImage   bi = ImageIO.read( file );  //画像を読み込む
-        ImageIcon   ii = new ImageIcon( bi );       //JLabel用に型変換
+        BufferedImage   ba = ImageIO.read( file );  //画像全体を読み込む
+        BufferedImage   bs = ba.getSubimage( 96, 192, 32, 48 );
+        ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
         JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
         jlImage.setSize( 384, 384 );                //画像部品サイズを設定
         jp.add( jlImage );                          //画像を貼り付け
