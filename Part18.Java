@@ -5,7 +5,8 @@ import java.awt.Color;
 import java.awt.Font;
 import java.io.File;
 import java.awt.image.BufferedImage;
-import java.imageio.ImageIO;
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 
 public class Part18
 {
@@ -54,8 +55,8 @@ public class Part18
         
            
         File file = new File( "vx_chara08_a.png" );
-        BUfferedImage   bi = ImageIO.read( file );
-        javax.swing.ImageIcon   ii = new javax.swing.ImageIcon( bi );
+        BufferedImage   bi = ImageIO.read( file );
+        ImageIcon   ii = new ImageIcon( bi );
         JLabel jlImage = new JLabel( ii ) ;
         jlImage.setSize( 384, 384 );
         jp.add( jlImage );
