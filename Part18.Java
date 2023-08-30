@@ -80,7 +80,7 @@ public class Part18
     {    
         BufferedImage   bs = ba.getSubimage( cw * x, ch * y, cw, ch );
         Image   im = bs.getScaledInstance( sw, sh, Image.SCALE_DEFAULT );
-        ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
+        ImageIcon   ii = new ImageIcon( im );       //JLabel用に型変換
         JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
         jlImage.setSize( sw, sh );                //画像部品サイズを設定
         jp.add( jlImage );                          //画像を貼り付け
