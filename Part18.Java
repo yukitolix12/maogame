@@ -55,8 +55,8 @@ public class Part18
 
         int     cw = 32;            //セルサイズ・幅
         int     ch = 48;            //セルサイズ・高さ
-        int     sw = 64;            //表示サイズ・幅
-        int     sh = 96;            //表示サイズ・高さ
+        int     sw = 200;            //表示サイズ・幅
+        int     sh = 200;            //表示サイズ・高さ
 
         putMonster( 3, 4, cw, ch, sw, sh );     // モンスター 3-4 表示
         putMonster( 6, 4, cw, ch, sw, sh );     // モンスター 6-4 表示
