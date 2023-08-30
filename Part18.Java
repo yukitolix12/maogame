@@ -52,8 +52,8 @@ public class Part18
         File file = new File( "vx_chara08_a.png" ); // ファイルを開く
         ba = ImageIO.read( file );  //画像全体を読み込む
 
-        int     cx = 32;
-        int     cy = 48;
+        int     cw = 32;
+        int     ch = 48;
         int     sw = 64;
         int     sh = 96;
 
