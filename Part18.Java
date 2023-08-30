@@ -78,6 +78,7 @@ public class Part18
     static void putMonster( int x, int y, int cw, int ch, int sw, int sh )
     {    
         BufferedImage   bs = ba.getSubimage( cw * x, ch * y, cw, ch );
+        bs.getScaledInstance( sw, sh, Image.SCALE_DEFAULT );
         ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
         JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
         jlImage.setSize( sw, sh );                //画像部品サイズを設定
