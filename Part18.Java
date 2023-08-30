@@ -61,12 +61,12 @@ public class Part18
         putMonster( 9, 4, cx, cy );     // モンスター 9-4 表示
     }
 
-    static void putMonster( int x, int y, int cx, int cy )
+    static void putMonster( int x, int y, int cw, int ch )
     {    
-        BufferedImage   bs = ba.getSubimage( cx * x, cy * y, cx, cy );
+        BufferedImage   bs = ba.getSubimage( cw * x, ch * y, cw, ch );
         ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
         JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
-        jlImage.setSize( cx, cy );                //画像部品サイズを設定
+        jlImage.setSize( cw, ch );                //画像部品サイズを設定
         jp.add( jlImage );                          //画像を貼り付け
     }    
 }
