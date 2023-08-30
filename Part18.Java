@@ -54,10 +54,12 @@ public class Part18
 
         int     cx = 32;
         int     cy = 48;
+        int     sw = 64;
+        int     sh = 96;
 
-        putMonster( 3, 4, cx, cy );     // モンスター 3-4 表示
-        putMonster( 6, 4, cx, cy );     // モンスター 6-4 表示
-        putMonster( 9, 4, cx, cy );     // モンスター 9-4 表示
+        putMonster( 3, 4, cw, ch, sw, sh );     // モンスター 3-4 表示
+        putMonster( 6, 4, cw, ch, sw, sh );     // モンスター 6-4 表示
+        putMonster( 9, 4, cw, ch, sw, sh );     // モンスター 9-4 表示
 
         jf.setVisible( true );
     }
@@ -78,7 +80,7 @@ public class Part18
         BufferedImage   bs = ba.getSubimage( cw * x, ch * y, cw, ch );
         ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
         JLabel jlImage = new JLabel( ii ) ;         //画像部品を作成
-        jlImage.setSize( cw, ch );                //画像部品サイズを設定
+        jlImage.setSize( sw, sh );                //画像部品サイズを設定
         jp.add( jlImage );                          //画像を貼り付け
     }    
 }
