@@ -73,7 +73,7 @@ public class Part18
      * @param sh     表示サイズ・高さ
      */
 
-    static void putMonster( int x, int y, int cw, int ch )
+    static void putMonster( int x, int y, int cw, int ch, int sw, int sh )
     {    
         BufferedImage   bs = ba.getSubimage( cw * x, ch * y, cw, ch );
         ImageIcon   ii = new ImageIcon( bs );       //JLabel用に型変換
