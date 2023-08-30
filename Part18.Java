@@ -62,6 +62,17 @@ public class Part18
         jf.setVisible( true );
     }
 
+    /**
+     * モンスターを表示
+     * 
+     * @param x    表示するセル座標X
+     * @param y    表示するセル座標Y
+     * @param cw   セルの大きさ・幅
+     * @param ch   セルの大きさ・高さ
+     * @param sw     表示サイズ・幅
+     * @param sh     表示サイズ・高さ
+     */
+
     static void putMonster( int x, int y, int cw, int ch )
     {    
         BufferedImage   bs = ba.getSubimage( cw * x, ch * y, cw, ch );
