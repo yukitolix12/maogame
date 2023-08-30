@@ -21,7 +21,6 @@ public class Part18
         // ウィンドウフレームを作成、表示
         JFrame jf = new JFrame();
         jf.setBounds( 20, 50, 800, 450);
-        jf.setVisible( true );
         jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
         // 親パネルを作成し、フレームに貼り付け
@@ -59,6 +58,8 @@ public class Part18
         putMonster( 3, 4, cx, cy );     // モンスター 3-4 表示
         putMonster( 6, 4, cx, cy );     // モンスター 6-4 表示
         putMonster( 9, 4, cx, cy );     // モンスター 9-4 表示
+
+        jf.setVisible( true );
     }
 
     static void putMonster( int x, int y, int cw, int ch )
