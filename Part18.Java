@@ -25,7 +25,7 @@ public class Part18
         jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
         // 親パネルを作成し、フレームに貼り付け
-        jp = new JPanel( new java.awt.GridLayout( 5, 1 ));
+        jp = new JPanel( new java.awt.GridLayout( 3, 1 ));
         jp.setBackground( Color.BLACK );
         jf.add( jp );
 
@@ -54,8 +54,8 @@ public class Part18
         int     sh = 200;            //表示サイズ・高さ
 
         putMonster( 3, 4, cw, ch, sw, sh );     // モンスター 3-4 表示
-        putMonster( 6, 4, cw, ch, sw, sh );     // モンスター 6-4 表示
-        putMonster( 9, 4, cw, ch, sw, sh );     // モンスター 9-4 表示
+  //    putMonster( 6, 4, cw, ch, sw, sh );     // モンスター 6-4 表示
+  //    putMonster( 9, 4, cw, ch, sw, sh );     // モンスター 9-4 表示
         
         // ラベルを作成し、親パネルに貼り付け
         JLabel jl = new JLabel( "魔王が世界を滅ぼそうとしています");
