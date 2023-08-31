@@ -38,7 +38,7 @@ public class Part18
         //レイアウト1行目
         // パネルを作成し、親パネルに貼り付け
         JPanel  jpChild = new JPanel();
-        jpChild.setBackground( Color.RED );
+        jpChild.setBackground( Color.BLUE );
         jp.add( jpChild );
         // ラベルを作成し、子パネルに貼り付け
         JLabel jlChild = new JLabel( "トンヌラ Lv99 HP999/999");
