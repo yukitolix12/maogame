@@ -9,11 +9,18 @@ public class Console
         putStatus();
     }
 
+    //ステータスを表示
+
     public static void putStatus()
     {
         put("----------------------------");
-        put( " " +  Part01.name + " Lv" +  Part01.lv + " HP"  +  Part01.hp + " " +  Part01.gold  +"G");
+        put( getStatusString());
         put("----------------------------");
+    }
+
+    public static String getStatusString()
+    {
+        return( " " +  Part01.name + " Lv" +  Part01.lv + " HP"  +  Part01.hp + " " +  Part01.gold  +"円");
     }
     
     /**
