@@ -29,15 +29,16 @@ public class Part18
         jp.setBackground( Color.BLACK );
         jf.add( jp );
 
-        // パネルを作成し、親パネルに貼り付け
-        JPanel  jpChild = new JPanel();
-        jpChild.setBackground( Color.RED );
-        jp.add( jpChild );
-
         //フォントを作成
         Font    f = new Font( Font.MONOSPACED, 
                               Font.BOLD,
                               40 );
+
+        //レイアウト1行目
+        // パネルを作成し、親パネルに貼り付け
+        JPanel  jpChild = new JPanel();
+        jpChild.setBackground( Color.RED );
+        jp.add( jpChild );
 
         // ラベルを作成し、子パネルに貼り付け
         JLabel jlChild = new JLabel( "トンヌラ Lv99 HP999/999");
