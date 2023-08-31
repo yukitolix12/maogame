@@ -54,12 +54,14 @@ public class Part18
         jp.add( jpChild2 );
 
         //選択肢をパネルに貼り付け
-        JLabel jlMain = new JLabel("1.魔王を倒しにいく"); 
+        JLabel jlMain = new JLabel("<html>1.魔王を倒しにいく<br>2.修行する<br>3.宿屋に泊まる"); 
         jlMain.setFont( f );
         jpChild2.add( jlMain );     
 
+          
+
 /* 
-        // モンスターを貼り付け
+        // モンスターをパネルに貼り付け
         File file = new File( "vx_chara08_a.png" ); // ファイルを開く
         ba = ImageIO.read( file );  //画像全体を読み込む
 
