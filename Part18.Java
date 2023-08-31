@@ -25,24 +25,19 @@ public class Part18
         jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
         // 親パネルを作成し、フレームに貼り付け
-        jp = new JPanel( new java.awt.GridLayout( 2, 3 ));
+        jp = new JPanel( new java.awt.GridLayout( 5, 1 ));
         jp.setBackground( Color.BLACK );
         jf.add( jp );
-
-        // ラベルを作成し、親パネルに貼り付け
-        JLabel jl = new JLabel( "魔王が世界を滅ぼそうとしています");
-        Font    f = new Font( Font.MONOSPACED, 
-                              Font.BOLD,
-                              40 );
-
-        jl.setFont( f );
-        jl.setForeground( new Color( 255, 128, 0 ) );
-        jp.add( jl );
 
         // パネルを作成し、親パネルに貼り付け
         JPanel  jpChild = new JPanel();
         jpChild.setBackground( Color.RED );
         jp.add( jpChild );
+
+        //フォントを作成
+        Font    f = new Font( Font.MONOSPACED, 
+                              Font.BOLD,
+                              40 );
 
         // ラベルを作成し、子パネルに貼り付け
         JLabel jlChild = new JLabel( "トンヌラ Lv99 HP999/999");
@@ -61,6 +56,13 @@ public class Part18
         putMonster( 3, 4, cw, ch, sw, sh );     // モンスター 3-4 表示
         putMonster( 6, 4, cw, ch, sw, sh );     // モンスター 6-4 表示
         putMonster( 9, 4, cw, ch, sw, sh );     // モンスター 9-4 表示
+        
+        // ラベルを作成し、親パネルに貼り付け
+        JLabel jl = new JLabel( "魔王が世界を滅ぼそうとしています");
+
+        jl.setFont( f );
+        jl.setForeground( new Color( 255, 128, 0 ) );
+        jp.add( jl );
 
         jf.setVisible( true );
     }
