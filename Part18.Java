@@ -39,13 +39,14 @@ public class Part18
         JPanel  jpChild = new JPanel();
         jpChild.setBackground( Color.RED );
         jp.add( jpChild );
-
         // ラベルを作成し、子パネルに貼り付け
         JLabel jlChild = new JLabel( "トンヌラ Lv99 HP999/999");
         jlChild.setFont( f );
         jlChild.setForeground( Color.WHITE );
         jpChild.add( jlChild );
 
+
+        //レイアウト2行目
         File file = new File( "vx_chara08_a.png" ); // ファイルを開く
         ba = ImageIO.read( file );  //画像全体を読み込む
 
@@ -57,7 +58,8 @@ public class Part18
         putMonster( 3, 4, cw, ch, sw, sh );     // モンスター 3-4 表示
   //    putMonster( 6, 4, cw, ch, sw, sh );     // モンスター 6-4 表示
   //    putMonster( 9, 4, cw, ch, sw, sh );     // モンスター 9-4 表示
-        
+ 
+        //レイアウト3行目
         // ラベルを作成し、親パネルに貼り付け
         JLabel jl = new JLabel( "魔王が世界を滅ぼそうとしています");
 
