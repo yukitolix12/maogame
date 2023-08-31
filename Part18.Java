@@ -21,7 +21,7 @@ public class Part18
 
         // ウィンドウフレームを作成、表示
         JFrame jf = new JFrame();
-        jf.setBounds( 20, 50, 800, 450);
+        jf.setBounds( 20, 40, 940, 540);
         jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
         // 親パネルを作成し、フレームに貼り付け
