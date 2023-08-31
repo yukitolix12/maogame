@@ -41,7 +41,8 @@ public class Part18
         jpChild.setBackground( Color.BLUE );
         jp.add( jpChild );
         // ラベルを作成し、子パネルに貼り付け
-        JLabel jlChild = new JLabel( "トンヌラ Lv99 HP999/999");
+        JLabel jlChild = new JLabel( Console.getstatusString());
+
         jlChild.setFont( f );
         jlChild.setForeground( Color.WHITE );
         jpChild.add( jlChild );
