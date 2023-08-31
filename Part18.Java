@@ -25,7 +25,7 @@ public class Part18
         jf.setDefaultCloseOperation( JFrame.EXIT_ON_CLOSE );
 
         // 親パネルを作成し、フレームに貼り付け
-        jp = new JPanel();
+        jp = new JPanel( new java.awt.GridLayout( 3, 2 ));
         jp.setBackground( Color.BLACK );
         jf.add( jp );
 
