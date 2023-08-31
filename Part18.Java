@@ -53,6 +53,11 @@ public class Part18
         jpChild2.setBackground( Color.CYAN );
         jp.add( jpChild2 );
 
+        //選択肢をパネルに貼り付け
+        JLabel jlMain = new JLabel("1.魔王を倒しにいく"); 
+        jlMain.setFont( f );
+        jpChild2.add( jlMain );     
+
 /* 
         // モンスターを貼り付け
         File file = new File( "vx_chara08_a.png" ); // ファイルを開く
